@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=3 uid="uid://br7l3ldpcmr6l"]
+
+[ext_resource type="Script" uid="uid://3ifd4qg5xnot" path="res://Scenes/game_ui.gd" id="1_gek4i"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gek4i")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 19.0
+offset_right = 134.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 32
+text = "Жизни:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelLiveCount" type="Label" parent="."]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 20.0
+offset_right = 194.0
+offset_bottom = 65.0
+theme_override_font_sizes/font_size = 32
+text = "100"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 60.0
+offset_right = 163.0
+offset_bottom = 105.0
+theme_override_font_sizes/font_size = 32
+text = "Яблочки:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelAppleCount" type="Label" parent="."]
+layout_mode = 0
+offset_left = 171.0
+offset_top = 61.0
+offset_right = 211.0
+offset_bottom = 106.0
+theme_override_font_sizes/font_size = 32
+text = "0"

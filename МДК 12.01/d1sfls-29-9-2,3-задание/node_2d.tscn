@@ -1,0 +1,115 @@
+[gd_scene load_steps=5 format=3 uid="uid://kw2rfvgepj7i"]
+
+[ext_resource type="Texture2D" uid="uid://ci18ohkfop5di" path="res://icon.svg" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://bgx8uxds2b85n" path="res://WallPixel.png" id="2_0e48y"]
+[ext_resource type="Script" uid="uid://hefnvr4vy3ev" path="res://player_icon.gd" id="2_epypp"]
+[ext_resource type="PackedScene" uid="uid://c4lddlvooidcv" path="res://player_ship.tscn" id="4_0hol4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player icon" type="Sprite2D" parent="."]
+position = Vector2(449, 301)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_wtcfe")
+script = ExtResource("2_epypp")
+
+[node name="Brick11" type="Sprite2D" parent="."]
+position = Vector2(41, 97.2)
+rotation = -1.5708
+scale = Vector2(0.0683024, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick12" type="Sprite2D" parent="."]
+position = Vector2(41, 251.2)
+rotation = -1.5708
+scale = Vector2(0.0683024, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick13" type="Sprite2D" parent="."]
+position = Vector2(41, 405.2)
+rotation = -1.5708
+scale = Vector2(0.0683024, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick14" type="Sprite2D" parent="."]
+position = Vector2(41, 559.2)
+rotation = -1.5708
+scale = Vector2(0.0683024, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick15" type="Sprite2D" parent="."]
+position = Vector2(1111, 559.2)
+rotation = -1.5708
+scale = Vector2(0.0683024, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick16" type="Sprite2D" parent="."]
+position = Vector2(1111, 405.2)
+rotation = -1.5708
+scale = Vector2(0.0683024, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick17" type="Sprite2D" parent="."]
+position = Vector2(1111, 251.2)
+rotation = -1.5708
+scale = Vector2(0.0683024, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick18" type="Sprite2D" parent="."]
+position = Vector2(1111, 97.2)
+rotation = -1.5708
+scale = Vector2(0.0683024, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick" type="Sprite2D" parent="."]
+position = Vector2(118.95, 607)
+scale = Vector2(0.105261, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick2" type="Sprite2D" parent="."]
+position = Vector2(356.95, 607)
+scale = Vector2(0.105261, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick3" type="Sprite2D" parent="."]
+position = Vector2(594.95, 607)
+scale = Vector2(0.105261, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick4" type="Sprite2D" parent="."]
+position = Vector2(832.95, 607)
+scale = Vector2(0.105261, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick5" type="Sprite2D" parent="."]
+position = Vector2(1032.95, 607)
+scale = Vector2(0.105261, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick6" type="Sprite2D" parent="."]
+position = Vector2(118.95, 41)
+scale = Vector2(0.105261, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick7" type="Sprite2D" parent="."]
+position = Vector2(356.95, 41)
+scale = Vector2(0.105261, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick8" type="Sprite2D" parent="."]
+position = Vector2(594.95, 41)
+scale = Vector2(0.105261, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick9" type="Sprite2D" parent="."]
+position = Vector2(832.95, 41)
+scale = Vector2(0.105261, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Brick10" type="Sprite2D" parent="."]
+position = Vector2(1032.95, 41)
+scale = Vector2(0.105261, 0.1)
+texture = ExtResource("2_0e48y")
+
+[node name="Player ship" parent="." instance=ExtResource("4_0hol4")]
+position = Vector2(251, 127)

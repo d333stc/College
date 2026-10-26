@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://8b4h8xrxtkym"]
+
+[ext_resource type="Script" uid="uid://ceidrng3vtoqk" path="res://Scenes/health_component.gd" id="1_yf5fb"]
+
+[node name="HealthComponent" type="Node"]
+script = ExtResource("1_yf5fb")
+
+[node name="DamageCooldownTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="DamageCooldownTimer" to="." method="_on_damage_cooldown_timer_timeout"]

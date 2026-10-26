@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cg65dmrsupgrl"]
+
+[ext_resource type="Script" uid="uid://cppdwptorjpsl" path="res://Scenes/death_area.gd" id="1_51vy3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_67bil"]
+size = Vector2(2337.27, 1497.73)
+
+[node name="DeathArea" type="Area2D"]
+script = ExtResource("1_51vy3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(608, 451)
+scale = Vector2(1.1, 1.1)
+shape = SubResource("RectangleShape2D_67bil")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
