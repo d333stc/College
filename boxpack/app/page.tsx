@@ -1,7 +1,6 @@
 export default function HomePage() {
   return (
     <>
-      {/* ===== Шапка ===== */}
       <header className="bg-white">
         <div className="mx-auto flex max-w-[1000px] flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-[20px] font-extrabold tracking-tight text-[#1a2a52]">
@@ -18,10 +17,9 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* ===== Первый экран ===== */}
       <section className="bg-[#1a2a52] text-white">
         <div className="mx-auto grid max-w-[1000px] gap-12 px-4 py-[68px] lg:grid-cols-[1fr_400px] lg:gap-x-16">
-          {/* Левая часть: тексты, ссылка, кнопка, карточки с цифрами */}
+
           <div>
             <p className="px-3 text-[12px] text-white/90">
               Автоматизированный фулфилмент
@@ -50,7 +48,7 @@ export default function HomePage() {
             </div>
 
             <div className="mt-12 flex flex-wrap gap-7">
-              {/* Карточка 1 */}
+
               <div className="flex h-[82px] w-[136px] flex-col justify-center rounded-[10px] bg-white/10 px-3">
                 <svg
                   width="14"
@@ -65,7 +63,6 @@ export default function HomePage() {
                 <p className="mt-0.5 text-[9px] text-white/70">заказов в день</p>
               </div>
 
-              {/* Карточка 2 */}
               <div className="flex h-[82px] w-[136px] flex-col justify-center rounded-[10px] bg-white/10 px-3">
                 <svg
                   width="14"
@@ -80,7 +77,6 @@ export default function HomePage() {
                 <p className="mt-0.5 text-[9px] text-white/70">точность сборки</p>
               </div>
 
-              {/* Карточка 3 */}
               <div className="flex h-[82px] w-[136px] flex-col justify-center rounded-[10px] bg-white/10 px-3">
                 <svg
                   width="14"
@@ -97,7 +93,6 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Правая часть: место под видео */}
           <div
             id="video"
             className="flex h-[220px] w-full items-center justify-center rounded-xl bg-[#d1d5dc] lg:w-[400px]"
@@ -109,7 +104,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ===== Как начать работать с нами ===== */}
       <section id="steps" className="bg-white pb-[75px] pt-16">
         <div className="mx-auto max-w-[1062px] px-4">
           <h2 className="text-center text-[24px] font-bold">
@@ -121,49 +115,43 @@ export default function HomePage() {
           </p>
 
           <div className="mt-12 grid gap-[30px] sm:grid-cols-2 lg:grid-cols-4">
-            {/* Шаг 1 */}
+
             <div className="flex h-[162px] flex-col justify-center rounded-[10px] bg-[#f0f0f0] px-5 shadow-[0_2px_4px_rgba(0,0,0,0.12)] transition-shadow hover:shadow-[6px_8px_8px_rgba(0,0,0,0.25)]">
               <p className="text-xs font-bold">ШАГ 1</p>
               <h3 className="mt-2 text-xs font-semibold">Оставляете заявку</h3>
               <p className="mt-2 text-[10px] text-[#9a9a9a]">Через сайт или Telegram</p>
             </div>
 
-            {/* Шаг 2 */}
             <div className="flex h-[162px] flex-col justify-center rounded-[10px] bg-[#f0f0f0] px-5 shadow-[0_2px_4px_rgba(0,0,0,0.12)] transition-shadow hover:shadow-[6px_8px_8px_rgba(0,0,0,0.25)]">
               <p className="text-xs font-bold">ШАГ 2</p>
               <h3 className="mt-2 text-xs font-semibold">Получаете расчет</h3>
               <p className="mt-2 text-[10px] text-[#9a9a9a]">Под ваш объем и формат работы</p>
             </div>
 
-            {/* Шаг 3 */}
             <div className="flex h-[162px] flex-col justify-center rounded-[10px] bg-[#f0f0f0] px-5 shadow-[0_2px_4px_rgba(0,0,0,0.12)] transition-shadow hover:shadow-[6px_8px_8px_rgba(0,0,0,0.25)]">
               <p className="text-xs font-bold">ШАГ 3</p>
               <h3 className="mt-2 text-xs font-semibold">Подписываем договор</h3>
               <p className="mt-2 text-[10px] text-[#9a9a9a]">Через ЭДО</p>
             </div>
 
-            {/* Шаг 4 */}
             <div className="flex h-[162px] flex-col justify-center rounded-[10px] bg-[#f0f0f0] px-5 shadow-[0_2px_4px_rgba(0,0,0,0.12)] transition-shadow hover:shadow-[6px_8px_8px_rgba(0,0,0,0.25)]">
               <p className="text-xs font-bold">ШАГ 4</p>
               <h3 className="mt-2 text-xs font-semibold">Привозите товар</h3>
               <p className="mt-2 text-[10px] text-[#9a9a9a]">От поставщика или транспортной компании</p>
             </div>
 
-            {/* Шаг 5 */}
             <div className="flex h-[162px] flex-col justify-center rounded-[10px] bg-[#f0f0f0] px-5 shadow-[0_2px_4px_rgba(0,0,0,0.12)] transition-shadow hover:shadow-[6px_8px_8px_rgba(0,0,0,0.25)]">
               <p className="text-xs font-bold">ШАГ 5</p>
               <h3 className="mt-2 text-xs font-semibold">Автоматизированная упаковка</h3>
               <p className="mt-2 text-[10px] text-[#9a9a9a]">С видеофиксацией каждого этапа</p>
             </div>
 
-            {/* Шаг 6 */}
             <div className="flex h-[162px] flex-col justify-center rounded-[10px] bg-[#f0f0f0] px-5 shadow-[0_2px_4px_rgba(0,0,0,0.12)] transition-shadow hover:shadow-[6px_8px_8px_rgba(0,0,0,0.25)]">
               <p className="text-xs font-bold">ШАГ 6</p>
               <h3 className="mt-2 text-xs font-semibold">Отправляем</h3>
               <p className="mt-2 text-[10px] text-[#9a9a9a]">На маркетплейсы по всей России</p>
             </div>
 
-            {/* Шаг 7 */}
             <div className="flex h-[162px] flex-col justify-center rounded-[10px] bg-[#f0f0f0] px-5 shadow-[0_2px_4px_rgba(0,0,0,0.12)] transition-shadow hover:shadow-[6px_8px_8px_rgba(0,0,0,0.25)]">
               <p className="text-xs font-bold">ШАГ 7</p>
               <h3 className="mt-2 text-xs font-semibold">Получаете результат</h3>
@@ -173,7 +161,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ===== Услуги фулфилмента ===== */}
       <section id="services" className="bg-[#f8f8f8] pb-[90px] pt-12">
         <div className="mx-auto max-w-[877px] px-4">
           <h2 className="text-center text-[24px] font-bold">Услуги фулфилмента</h2>
@@ -182,7 +169,7 @@ export default function HomePage() {
           </p>
 
           <div className="mt-12 grid gap-[25px] sm:grid-cols-2 lg:grid-cols-3">
-            {/* Услуга 1 */}
+
             <div className="flex h-[165px] flex-col justify-center rounded-xl border-t-4 border-[#2cb5c8] bg-white px-6 shadow-[0_2px_4px_rgba(0,0,0,0.08)] transition-shadow hover:shadow-[6px_8px_8px_rgba(0,0,0,0.25)]">
               <h3 className="text-xs font-bold">Приемка и сортировка</h3>
               <p className="mt-2 text-[10px] leading-[1.3] text-[#b0b0b0]">
@@ -190,7 +177,6 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Услуга 2 */}
             <div className="flex h-[165px] flex-col justify-center rounded-xl border-t-4 border-[#2cb5c8] bg-white px-6 shadow-[0_2px_4px_rgba(0,0,0,0.08)] transition-shadow hover:shadow-[6px_8px_8px_rgba(0,0,0,0.25)]">
               <h3 className="text-xs font-bold">Проверка на брак</h3>
               <p className="mt-2 text-[10px] leading-[1.3] text-[#b0b0b0]">
@@ -198,7 +184,6 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Услуга 3 */}
             <div className="flex h-[165px] flex-col justify-center rounded-xl border-t-4 border-[#2cb5c8] bg-white px-6 shadow-[0_2px_4px_rgba(0,0,0,0.08)] transition-shadow hover:shadow-[6px_8px_8px_rgba(0,0,0,0.25)]">
               <h3 className="text-xs font-bold">Автоматизированная упаковка</h3>
               <p className="mt-2 text-[10px] leading-[1.3] text-[#b0b0b0]">
@@ -206,7 +191,6 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Услуга 4 */}
             <div className="flex h-[165px] flex-col justify-center rounded-xl border-t-4 border-[#2cb5c8] bg-white px-6 shadow-[0_2px_4px_rgba(0,0,0,0.08)] transition-shadow hover:shadow-[6px_8px_8px_rgba(0,0,0,0.25)]">
               <h3 className="text-xs font-bold">Сборка заказов</h3>
               <p className="mt-2 text-[10px] leading-[1.3] text-[#b0b0b0]">
@@ -214,7 +198,6 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Услуга 5 */}
             <div className="flex h-[165px] flex-col justify-center rounded-xl border-t-4 border-[#2cb5c8] bg-white px-6 shadow-[0_2px_4px_rgba(0,0,0,0.08)] transition-shadow hover:shadow-[6px_8px_8px_rgba(0,0,0,0.25)]">
               <h3 className="text-xs font-bold">Отправка на маркетплейсы</h3>
               <p className="mt-2 text-[10px] leading-[1.3] text-[#b0b0b0]">
@@ -222,7 +205,6 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Услуга 6 */}
             <div className="flex h-[165px] flex-col justify-center rounded-xl border-t-4 border-[#2cb5c8] bg-white px-6 shadow-[0_2px_4px_rgba(0,0,0,0.08)] transition-shadow hover:shadow-[6px_8px_8px_rgba(0,0,0,0.25)]">
               <h3 className="text-xs font-bold">Хранение товаров</h3>
               <p className="mt-2 text-[10px] leading-[1.3] text-[#b0b0b0]">
@@ -230,7 +212,6 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Услуга 7 */}
             <div className="flex h-[165px] flex-col justify-center rounded-xl border-t-4 border-[#2cb5c8] bg-white px-6 shadow-[0_2px_4px_rgba(0,0,0,0.08)] transition-shadow hover:shadow-[6px_8px_8px_rgba(0,0,0,0.25)]">
               <h3 className="text-xs font-bold">Интеграции</h3>
               <p className="mt-2 text-[10px] leading-[1.3] text-[#b0b0b0]">
@@ -241,21 +222,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ===== Почему выбирают BOXPACK ===== */}
       <section className="bg-[#1a2a52] pb-14 pt-8 text-white">
         <div className="mx-auto max-w-[943px] px-4">
           <h2 className="text-center text-[24px] font-bold">Почему выбирают BOXPACK</h2>
 
           <div className="mt-9 grid gap-[29px] sm:grid-cols-2 lg:grid-cols-4">
-            {/* Причина 1 */}
+
             <div className="flex h-[141px] flex-col justify-end rounded-[10px] bg-white/10 p-5">
               <h3 className="text-sm font-bold">Скорость</h3>
               <p className="mt-1.5 text-[11px] leading-[1.3] text-white/80">
                 До 20 000 товаров за смену и отправка день в день.
               </p>
             </div>
-            
-            {/* Причина 2 */}
+
             <div className="flex h-[141px] flex-col justify-end rounded-[10px] bg-white/10 p-5">
               <h3 className="text-sm font-bold">Точность</h3>
               <p className="mt-1.5 text-[11px] leading-[1.3] text-white/80">
@@ -263,7 +242,6 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Причина 3 */}
             <div className="flex h-[141px] flex-col justify-end rounded-[10px] bg-white/10 p-5">
               <h3 className="text-sm font-bold">Надежность</h3>
               <p className="mt-1.5 text-[11px] leading-[1.3] text-white/80">
@@ -271,7 +249,6 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Причина 4 */}
             <div className="flex h-[141px] flex-col justify-end rounded-[10px] bg-white/10 p-5">
               <h3 className="text-sm font-bold">Поддержка</h3>
               <p className="mt-1.5 text-[11px] leading-[1.3] text-white/80">
