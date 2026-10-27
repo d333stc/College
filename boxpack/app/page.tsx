@@ -254,7 +254,7 @@ export default function HomePage() {
                 До 20 000 товаров за смену и отправка день в день.
               </p>
             </div>
-
+            
             {/* Причина 2 */}
             <div className="flex h-[141px] flex-col justify-end rounded-[10px] bg-white/10 p-5">
               <h3 className="text-sm font-bold">Точность</h3>
